@@ -242,24 +242,24 @@ td{
 }
 
 @keyframes GTWHoverFade{
-	0%{background-image: url('/images/GTW-Button.png');}
-	100%{background-image: url('/images/GTWLiveNow.png');}
+	0%{background-image: url('images/GTW-Button.png');}
+	100%{background-image: url('images/GTWLiveNow.png');}
 }
 @-webkit-keyframes GTWHoverFade{
-	0%{background-image: url('/images/GTW-Button.png');}
-	100%{background-image: url('/images/GTWLiveNow.png');}
+	0%{background-image: url('images/GTW-Button.png');}
+	100%{background-image: url('images/GTWLiveNow.png');}
 }
 @-moz-keyframes GTWHoverFade{
-	0%{background-image: url('/images/GTW-Button.png');}
-	100%{background-image: url('/images/GTWLiveNow.png');}
+	0%{background-image: url('images/GTW-Button.png');}
+	100%{background-image: url('images/GTWLiveNow.png');}
 }
 @-ms-keyframes GTWHoverFade{
-	0%{background-image: url('/images/GTW-Button.png');}
-	100%{background-image: url('/images/GTWLiveNow.png');}
+	0%{background-image: url('images/GTW-Button.png');}
+	100%{background-image: url('images/GTWLiveNow.png');}
 }
 @-o-keyframes GTWHoverFade{
-	0%{background-image: url('/images/GTW-Button.png');}
-	100%{background-image: url('/images/GTWLiveNow.png');}
+	0%{background-image: url('images/GTW-Button.png');}
+	100%{background-image: url('images/GTWLiveNow.png');}
 }
 
 #GTWGap{
