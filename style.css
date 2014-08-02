@@ -227,11 +227,9 @@ td{
 }
 
 #GTW{
-	width:  200px;
 	height: 100px;
 	display: block;
-	margin: 0 auto;
-	background-image: url('/images/GTW-Button.png');
+	background-image: url('images/GTW-Button.png');
 	border-radius: 5px;
 }
 
