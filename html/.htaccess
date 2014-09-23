@@ -1,6 +1,0 @@
-AddType text/html py
-AddHandler cgi-script .py
-
-# BEGIN WordPress
-
-# END WordPress

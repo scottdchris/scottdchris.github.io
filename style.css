@@ -72,10 +72,11 @@ h1{
 
 .content-wrap{
 	display: block;
+	margin: 0 auto;
+	min-height: 800px;
+	padding-left: 100px;
 	position: relative;
 	width: 1250px;
-	padding-left: 100px;
-	margin: 0 auto;
 	/*border: 1px solid #333;*/
 }
 
