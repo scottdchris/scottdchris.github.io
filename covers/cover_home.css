@@ -1,0 +1,70 @@
+@font-face {
+	font-family: custom_font;
+	src: url('fonts/Patinio Contexto.ttf');
+}
+
+body {
+	margin: 0;
+	background-color: #991c1c;
+	font-family: 'helvetica neue';
+	font-size: 10pt;
+}
+
+/*--- Link Behavior ---*/
+a:link, a:visited
+{color: #000;	text-decoration:none;}
+a:hover, a:visited:hover
+{color: #fff;	text-decoration:none;!important}
+
+p {
+	color: #222;
+	line-height: 36px;
+	font-size: 16px;
+}
+
+h1 {
+	color: #fff;
+	font-family: Garamond, serif;
+	font-size: 5em;
+	margin: 20px;
+}
+
+h3 {
+	color: #fff;
+	font-family: Georgia, serif;
+	font-size: 2em;
+}
+
+.content-wrap {
+	display: block;
+	margin: 0 auto;
+	min-height: 800px;
+	position: relative;
+	/*border: 1px solid #333;*/
+}
+
+.content {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 30% 0 10%;
+	text-align: center;
+	width: 90%;
+}
+
+.button {
+	border-radius: 20px;
+	display: inline-block;
+	font-size: 2em;
+	line-height: 50px;
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+}
+
+.shifts {
+	background-color: #BDC3C7;
+}
+
+.request {
+	background-color: #FFD700;
+}
