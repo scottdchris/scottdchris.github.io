@@ -68,3 +68,15 @@ h3 {
 .request {
 	background-color: #FFD700;
 }
+
+.footer {
+	text-align: center;
+}
+
+.footer p {
+	color: #fff;
+}
+
+.footer a, .footer a:link, .footer a:visited, .footer a:hover, .footer a:visited:hover {
+	color: #fff;
+}
