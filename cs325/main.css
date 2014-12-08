@@ -64,11 +64,11 @@ tr {
 .header {background-color: #333; color: #fff; text-align: center;}
 .discussion.header{background-color: #555; color: #fff;}
 .section {background-color: #888; color: #fff; width: 75px;}
-.waitlist {background-color: #FBEC5D}
+.reqs{background-color: #90EE90; width: 100px;}
+#confirm{background-color: #90EE90;}
 
+.red{background-color: #F5785A;}
+.yellow {background-color: #FBEC5D}
 .left{text-align: left;}
 .right{text-align: right;}
 .center {text-align: center;}
-.reqs{background-color: #90EE90; width: 100px;}
-.red{background-color: #F5785A;}
-
