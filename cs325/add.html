@@ -28,45 +28,49 @@
 
 			<table>
 				<th colspan='7'>Lecture: Psychology 100</th>
-					<tr class='before header'>
-						<td class='left'>&nbsp;Sections</td>
-						<td>Day & Time</td>
-						<td>Location</td>
-						<td>Instructor</td>
-						<td>Requirements</td>
-						<td>Available Seats</td>
-						<td>Enroll</td>
-					</tr>
-					<tr class='before'>
-						<td class='section right'>2&nbsp;</td>
-						<td>MoWeFr 9:05AM - 9:55AM</td>
-						<td>Mahar 108</td>
-						<td>Tamara Rahhal</td>
-						<td class='reqs'>Met</td>
-						<td class='right'>34</td>
-						<td class='center'><a><button id='submit'>Enroll</button></a></td>
-					</tr>
-					<tr class='before discussion header hide'>
-						<td class='left'>&nbsp;Discussion</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr class='discussion before'>
-						<td class='section'>&nbsp;2B</td>
-						<td>Th 10:10AM - 11:00AM</td>
-						<td>TBA</td>
-						<td>Staff</td>
-						<td class='reqs'>Met</td>
-						<td class='right'>18</td>
-						<td></td>
-					</tr>
-				<tr id='confirm' class='green'>
-					<td id='confirm' colspan='7'>&nbsp;You have successfully added "Psychology 100"!</td></tr>
-				</table>
+				<tr class='before header'>
+					<td class='left'>&nbsp;Sections</td>
+					<td>Day & Time</td>
+					<td>Location</td>
+					<td>Instructor</td>
+					<td>Requirements</td>
+					<td>Available Seats</td>
+					<td>Enroll</td>
+				</tr>
+				<tr class='before'>
+					<td class='section right'>2&nbsp;</td>
+					<td>MoWeFr 9:05AM - 9:55AM</td>
+					<td>Mahar 108</td>
+					<td>Tamara Rahhal</td>
+					<td class='reqs green'>Met</td>
+					<td class='right'>34</td>
+					<td class='center'><a><button id='submit'>Enroll</button></a></td>
+				</tr>
+				<tr class='before discussion header hide'>
+					<td class='left'>&nbsp;Discussion</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class='discussion before'>
+					<td class='section'>&nbsp;2B</td>
+					<td>Th 10:10AM - 11:00AM</td>
+					<td>TBA</td>
+					<td>Staff</td>
+					<td class='reqs green'>Met</td>
+					<td class='right'>18</td>
+					<td></td>
+				</tr>
+				<tr class='confirm green'>
+					<td class='confirm' colspan='7'>&nbsp;You have successfully enrolled in "Psychology 100"!</td>
+				</tr>
+				<tr class='confirm'>
+					<td class='confirm' colspan='7'>&nbsp;Your cart is empty. <a href='#schedule.html'>Click to view schedule</a></td>
+				</tr>
+			</table>
 		<!--<br>
 		<input class='text' type='text' size='10%'></input>-->
 	</form>
@@ -77,10 +81,10 @@
 </div>
 <script type="text/javascript">
 	$(document).ready(function() {
-		$('#confirm').hide();
+		$('.confirm').hide();
 		$('#submit').click(function() {
 			$('.before').hide();
-			$('#confirm').toggle();
+			$('.confirm').toggle();
 		});
 	});
 </script>

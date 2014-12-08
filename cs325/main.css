@@ -1,20 +1,9 @@
-@font-face {
-	font-family: custom_font;
-	src: url('fonts/Patinio Contexto.ttf');
-}
-
 body {
 	margin: 0;
 	background-color: #991c1c;
 	font-family: 'helvetica neue';
 	font-size: 10pt;
 }
-
-/*--- Link Behavior ---*/
-a:link, a:visited
-{color: #000;	text-decoration:none;}
-a:hover, a:visited:hover
-{color: #fff;	text-decoration:none;!important}
 
 p {
 	color: #222;
@@ -64,11 +53,15 @@ tr {
 .header {background-color: #333; color: #fff; text-align: center;}
 .discussion.header{background-color: #555; color: #fff;}
 .section {background-color: #888; color: #fff; width: 75px;}
-.reqs{background-color: #90EE90; width: 100px;}
-#confirm{background-color: #90EE90;}
+.reqs{width: 100px;}
+.confirm a:hover, .confirm a:link,
+.confirm a:visited, .confirm a:visited:hover{
+	color: #00F;
+}
 
 .red{background-color: #F5785A;}
-.yellow {background-color: #FBEC5D}
+.yellow {background-color: #FBEC5D;}
+.green {background-color: #90EE90;}
 .left{text-align: left;}
 .right{text-align: right;}
 .center {text-align: center;}
