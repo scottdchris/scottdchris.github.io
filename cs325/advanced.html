@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!--PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">-->
+<html>
+<head>
+	<title>CS 325 | Spire</title>
+	<meta http-equiv="content-type"	content="text/html" />
+	<link rel="icon"		type="image/png"media="screen"	href="/images/favicon.png"/>
+	<link rel="stylesheet"	type="text/css"	media="screen"	href="home.css"/>
+	<link rel="stylesheet"	type="text/css"	media="screen"	href="main.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="content-wrap">
+		<!-- Header -->
+
+		<!-- Main Content -->
+		<div class="content">
+			<a href='home.html'><h1>SPIRE</h1></a>
+			<ul>
+				<li><a href='search.html' class='button'>Search</a></li>
+				<li><a href='add.html' class='button'>Add</a></li>
+				<li><a href='shifts/index.html' class='button'>Drop</a></li>
+				<li><a href='request/index.html' class='button'>Swap</a></li>
+			</ul>
+
+			<form class='searchform' action='results.html'>
+				<h4 class='basic'>Basic Search</h4>
+				<h4 class='search_criteria'>Search Criteria:</h4>
+				Term:
+				<select>
+					<option value="Spring 2015">Spring 2015</option>
+					<option value="Fall 2014">Fall 2014</option>
+					<option value="Spring 2014">Spring 2014</option>
+					<option value="Fall 2013">Fall 2013</option>
+				</select>
+				<br>
+				Department: 
+				<select>
+					<option value="Spring 2015">Math</option>
+					<option value="Fall 2014">Physics</option>
+					<option value="Fall 2014">Psychology</option>
+					<option value="Spring 2014">Science</option>
+					<option value="Fall 2013">Zoology</option>
+				</select>
+				<br><br>
+				<input type='checkbox' checked='true'>Open
+				<input type='checkbox'>Waitlist
+				<input type='checkbox'>Closed
+				<br>
+				<a class='advanced'>Click for advanced options</a>
+				<div class='hide'>
+					<h5>Advanced Options</h5>
+					Gen Ed
+					<select>
+						<option></option>
+						<option>AL</option>
+						<option>AT</option>
+						<option>BS</option>
+						<option>H</option>
+						<option>PS</option>
+						<option>R1</option>
+						<option>R2</option>
+					</select>
+					<br>
+					Days
+					<input type='checkbox' checked='true'>Mo
+					<input type='checkbox' checked='true'>Tu
+					<input type='checkbox' checked='true'>We
+					<input type='checkbox' checked='true'>Th
+					<input type='checkbox' checked='true'>Fr
+					<input type='checkbox' checked='true'>Sa
+					<input type='checkbox' checked='true'>Su
+					<br>
+					(Search will not show classes that meet on unchecked days.)
+					<br><br>
+				</div>
+				<input type='submit' value='Search' href='results.html'>
+		<!--<br>
+		<input class='text' type='text' size='10%'></input>-->
+	</form>
+	<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+	<div class='footer'>
+		<p><a href=''>UMass CS 325</a> | <a href='http://scottdchris.com'>ScottDChris.com</a> &copy; 2014</p>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.hide').hide();
+		$('.advanced').click(function() {
+			$('.hide').toggle();
+		});
+	});
+</script>
+</body>
+</html>

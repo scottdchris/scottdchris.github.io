@@ -1,0 +1,74 @@
+@font-face {
+	font-family: custom_font;
+	src: url('fonts/Patinio Contexto.ttf');
+}
+
+body {
+	margin: 0;
+	background-color: #991c1c;
+	font-family: 'helvetica neue';
+	font-size: 10pt;
+}
+
+/*--- Link Behavior ---*/
+a:link, a:visited
+{color: #000;	text-decoration:none;}
+a:hover, a:visited:hover
+{color: #fff;	text-decoration:none;!important}
+
+p {
+	color: #222;
+	line-height: 36px;
+	font-size: 16px;
+}
+
+h1 {
+	margin: 0px;
+}
+
+.content-wrap {
+	display: block;
+	margin: 0 auto;
+	min-height: 800px;
+	position: relative;
+	/*border: 1px solid #333;*/
+}
+
+.content {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 50px 0 10%;
+	text-align: left;
+}
+
+.button {line-height: 0px;}
+
+.basic {font-size: 2em; margin: .5em 0;}
+.search_criteria {margin: 0;}
+
+table {
+	background-color: #BDC3C7;
+	border-radius: 5px;
+	padding: 10px;
+	width: 90%;
+	border-spacing: 1px;
+}
+th {
+	padding: 5px;   
+}
+tr {
+	height: 25px;
+	background-color: #fff;
+}
+
+.header {background-color: #333; color: #fff; text-align: center;}
+.discussion.header{background-color: #555; color: #fff;}
+.section {background-color: #888; color: #fff; width: 75px;}
+.waitlist {background-color: #FBEC5D}
+
+.left{text-align: left;}
+.right{text-align: right;}
+.center {text-align: center;}
+.reqs{background-color: #90EE90; width: 100px;}
+.red{background-color: #F5785A;}
+
