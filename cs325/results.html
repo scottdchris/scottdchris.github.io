@@ -27,13 +27,7 @@
 			</div>
 
 			<table>
-				<th>Lecture</th>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td><a href='home.html'><button id='submit'>Add</button></a></td>
+				<th colspan="7">Lecture</th>
 				<tr class='header'>
 					<td class='left'>&nbsp;Sections</td>
 					<td>Day & Time</td>
@@ -77,7 +71,7 @@
 					<td>Staff</td>
 					<td class='reqs green'>Met</td>
 					<td class='right'>13</td>
-					<td class='center'><a href='#'><button id='submit'>Add</button></a></td>
+					<td class='center'><a href='#'><button>Add</button></a></td>
 				</tr>
 				<tr class='discussion'>
 					<td class='section'>&nbsp;2B</td>
@@ -86,7 +80,7 @@
 					<td>Staff</td>
 					<td class='reqs green'>Met</td>
 					<td class='right'>18</td>
-					<td class='center'><a href='add.html'><button id='submit'>Add</button></a></td>
+					<td class='center'><a href='add.html'><button>Add</button></a></td>
 				</tr>
 				<tr class='discussion'>
 					<td class='section'>&nbsp;2H</td>
@@ -95,7 +89,7 @@
 					<td>Staff</td>
 					<td class='reqs red'>Enrollment: Honors College</td>
 					<td class='right'>5</td>
-					<td class='center'><a href='#'><button id='submit'>Add</button></a></td>
+					<td class='center'><a href='#'><button>Add</button></a></td>
 				</tr>
 				<tr class='header discussion'>
 					<td class='left'>&nbsp;Sections</td>
@@ -128,15 +122,14 @@
 </div>
 <script type="text/javascript">
 	$(document).ready(function() {
+		$('#checkbox').attr('checked', false);
 		$('.discussion').hide();
-		$('#submit').hide();
 		$('#checkbox').change(function() {
 			if($(this).is(":checked")) {
-				$('.discussion').toggle();
+				$('.discussion').show();
 			}
 			if(!$(this).is(":checked")) {
-				$('.discussion').toggle();
-				$('#submit').hide();
+				$('.discussion').hide();
 			}
 		});
 	});
