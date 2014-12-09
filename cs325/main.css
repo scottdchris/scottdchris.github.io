@@ -34,6 +34,8 @@ h1 {
 
 .basic {font-size: 2em; margin: .5em 0;}
 .search_criteria {margin: 0;}
+.advanced {text-decoration: underline;}
+
 
 table {
 	background-color: #BDC3C7;

@@ -14,7 +14,7 @@ body {
 a:link, a:visited
 {color: #000;	text-decoration:none;}
 a:hover, a:visited:hover
-{color: #fff;	text-decoration:none;!important}
+{color: #fff;}
 
 p {
 	color: #222;
