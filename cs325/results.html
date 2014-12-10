@@ -17,7 +17,7 @@
 		<div class="content">
 			<a href='index.html'><h1>SPIRE</h1></a>
 			<ul>
-				<li><a href='search.html' class='button'>Search</a></li>
+				<li><a href='search.html' class='button' style='color:#fff'>Search</a></li>
 				<li><a href='add.html' class='button'>Add</a></li>
 				<li><a href='#drop.html' class='button'>Drop</a></li>
 				<li><a href='swap.html' class='button'>Swap</a></li>
@@ -27,7 +27,7 @@
 			</div>
 
 			<table>
-				<th colspan="7">Lecture</th>
+				<th colspan="7">Lecture: Psychology 100 - Introduction to Psychology</th>
 				<tr class='header'>
 					<td class='left'>&nbsp;Sections</td>
 					<td>Day &amp; Time</td>
@@ -73,14 +73,14 @@
 					<td class='right'>13</td>
 					<td class='center'><a href='#'><button>Add</button></a></td>
 				</tr>
-				<tr class='discussion'>
+				<tr id='2B' class='discussion'>
 					<td class='section'>&nbsp;2B</td>
 					<td>Th 10:10AM - 11:00AM</td>
 					<td>TBA</td>
 					<td>Staff</td>
 					<td class='reqs green'>Met</td>
 					<td class='right'>18</td>
-					<td class='center'><a href='add.html'><button>Add</button></a></td>
+					<td class='center'><button id='add'>Add</button></a></td>
 				</tr>
 				<tr class='discussion'>
 					<td class='section'>&nbsp;2H</td>
@@ -129,6 +129,9 @@
 				$('.discussion').hide();
 			}
 		});
+		$('#add').click(function(){
+			$('#2B').html('<td colspan="7" class="green link">&nbsp; This class has been added to your cart. <a href="add.html">Click here to view your cart</a>')
+		})
 	});
 </script>
 </body>
