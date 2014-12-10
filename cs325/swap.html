@@ -29,11 +29,13 @@
 			<table>
 				<th style="text-align:left;" class="header" colspan='5'>Swap</th>
 				<tr>
-					<td class='left' colspan='3'>&nbsp;Select what you want to swap:</td>
+					<td class='left' colspan='3' style="width:50%;">&nbsp;Select what you want to swap:</td>
 					<td style="width:25%;">&nbsp;<button id="swap_classes" autocomplete="off">Classes</button></td>
 					<td style="width:25%;">&nbsp;<button id="swap_discussion" autocomplete="off">Discussion Sections</button></td>
 				</tr>
-                
+            </table>
+            
+            <table id="tbl_swap">
                 <!-- class swap -->
 				<tr class="tbl_swap_class">
 					<td class='section' colspan='5'>&nbsp; Swap this class:</td>
@@ -89,21 +91,49 @@
                         </select>
                     </td>
 				</tr>
-				<tr class="tbl_swap_disc">
+                
+                <tr class="tbl_swap_disc_new">
+					<td style="width:10%;">&nbsp;Section</td>
+					<td style="width:25%;">Day &amp; Time</td>
+					<td style="width:25%;">Location</td>
+					<td style="width:25%;">Instructor</td>
+					<td style="width:15%;">Status</td>
+                </tr>
+				<tr class='discussion before tbl_swap_disc_new'>
+					<td style="width:10%;">&nbsp;2B</td>
+					<td style="width:25%;">Th 10:10AM - 11:00AM</td>
+					<td style="width:25%;">TBA</td>
+					<td style="width:25%;">Staff</td>
+					<td class='green' style="width:15%;">Open</td>
+				</tr>
+                
+				<tr class="tbl_swap_disc_new">
 					<td class='section' colspan='5'>&nbsp; To this discussion:</td>
 				</tr>
-                <tr class="tbl_swap_disc">
-                    <td style="width:15%;">&nbsp;From cart:</td>
-                    <td class='left' colspan='4'>&nbsp;
-                        <select id="sel_disc_new" style="width:75%;" autocomplete="off">
-                            <option value="" selected disabled>Choose a class</option>
-                            <option value="CMPSCI 325">CMPSCI 325 - Introduction to Usability</option>
-                            <option value="ENGLISH 112">ENGLISH 112 - Introduction to English</option>
-                            <option value="PSYCH 100">PSYCH 100 - Introduction to Psychology</option>
-                            <option value="PSYCH 200">PSYCH 200 - Post-introductory Psychology</option>
-                        </select>
-                    </td>
+                
+                <form action="">
+                <tr class="tbl_swap_disc_new">
+					<td style="width:10%;">&nbsp; Section</td>
+					<td style="width:25%;">Day &amp; Time</td>
+					<td style="width:25%;">Location</td>
+					<td style="width:25%;">Instructor</td>
+					<td style="width:15%;">Status</td>
+                </tr>
+				<tr class='discussion before tbl_swap_disc_new'>
+					<td style="width:10%;">&nbsp; <input type="radio" class="discrad" name="section" value="1B" autocomplete="off"> 1B</td>
+					<td style="width:25%;">Tu 10:10AM - 11:00AM</td>
+					<td style="width:25%;">TBA</td>
+					<td style="width:25%;">Staff</td>
+					<td class='yellow' style="width:15%;">Waitlist</td>
 				</tr>
+				<tr class='discussion before tbl_swap_disc_new'>
+					<td style="width:10%;">&nbsp; <input type="radio" class="discrad" name="section" value="2B" autocomplete="off" checked="checked"> 2B</td>
+					<td style="width:25%;">Th 10:10AM - 11:00AM</td>
+					<td style="width:25%;">TBA</td>
+					<td style="width:25%;">Staff</td>
+					<td class='green' style="width:15%;">Open</td>
+				</tr>
+                </form>
                 <!-- end discussion swap -->
                 
                 <!-- confirmation/success -->
@@ -120,10 +150,9 @@
 				</tr>
                 <!-- end confirmation/success -->
 			</table>
-	</form>
-	<h3>Direct trade Blue Bottle polaroid chambray. Meh hashtag meditation, artisan Shoreditch freegan you probably haven't heard of them messenger bag Portland Godard fanny pack.</h3>
+	
 	<div class='footer'>
-		<p><a href=''>UMass CS 325</a> | <a href='http://scottdchris.com'>ScottDChris.com</a> &copy; 2014</p>
+		<p>UMass CS 325 &copy; 2014</p>
 	</div>
 </div>
 <script type="text/javascript">
@@ -144,8 +173,10 @@
 		$('#swap_btn').hide();
         $('#confirm_swap').hide();
         $('#success_swap').hide();
+        $('#tbl_swap').hide();
         $('.tbl_swap_disc').hide();
         $('.tbl_swap_class').hide();
+        $('.tbl_swap_disc_new').hide();
         
         // discussion/class rows
         $('#swap_classes').click(function() {
@@ -153,6 +184,7 @@
             $('#swap_discussion').prop('disabled', false);
             $('.tbl_swap_disc').hide();
 			$('.tbl_swap_class').show();
+            $('#tbl_swap').show();
             
             changeCheck('class');
 		});
@@ -162,6 +194,7 @@
             $('#swap_discussion').prop('disabled', true);
             $('.tbl_swap_class').hide();
             $('.tbl_swap_disc').show();
+            $('#tbl_swap').show();
             
             changeCheck('disc');
 		});
@@ -184,6 +217,7 @@
             $('#swap_btn').show();
 		});
         
+        // select class
         $('#sel_class_old').change(function () {
             if ($('#sel_class_new').val()) {
                 $('#swap_btn').show();
@@ -196,15 +230,20 @@
             }
         });
         
-        $('#sel_disc_old').change(function () {
-            if ($('#sel_disc_new').val()) {
-                $('#swap_btn').show();
-            }
+        // select discussion
+        $('#sel_disc_old').change(function () {            
+            $('.tbl_swap_disc_new').show();
+            $('#swap_btn').show();
+            $('#submit_swap').prop('disabled', true);
         });
         
-        $('#sel_disc_new').change(function () {
-            if ($('#sel_disc_old').val()) {
-                $('#swap_btn').show();
+        // discussion radio buttons
+        $('.discrad').change(function () {
+            if ($('input[name=section]:checked').val() === '2B') {
+                $('#submit_swap').prop('disabled', true);
+            }
+            else {
+                $('#submit_swap').prop('disabled', false);
             }
         });
 	});
