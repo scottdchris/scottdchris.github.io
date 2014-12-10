@@ -33,7 +33,7 @@
 					<td style="width:25%;">&nbsp;<a href="#">Classes</a></td>
 					<td style="width:25%;">&nbsp;<a href="#">Discussion Sections</a></td>
 				</tr>
-				<tr class='before'>
+				<tr>
 					<td class='section' colspan='5'>&nbsp; Swap this class:</td>
 				</tr>
 				<tr>
@@ -47,7 +47,7 @@
                         </select>
                     </td>
 				</tr>
-				<tr class='before'>
+				<tr>
 					<td class='section' colspan='5'>&nbsp; With this class:</td>
 				</tr>
                 <tr>
@@ -68,13 +68,15 @@
                     </td>
 				</tr>
 				<tr class='header'>
-                    <td colspan='5'><input class="green" type="submit" value="SWAP" href="swap.html" /></td>
+                    <td colspan='5'><a><button id="submit_swap" class="green">Swap classes</button></a></td>
 				</tr>
-				<tr class='confirm green'>
-					<td class='confirm' colspan='7'>&nbsp;You have successfully enrolled in "Psychology 100"!</td>
+				<tr id="confirm_swap" class='confirm yellow'>
+                    <td colspan='2'>&nbsp;Are you sure?</td>
+					<td colspan='1'><a><button id="confirm_yes" class="green">Yes</button></a></td>
+                    <td colspan='2'><a><button id="confirm_cancel">Cancel</button></a></td>
 				</tr>
-				<tr class='confirm'>
-					<td class='confirm' colspan='7'>&nbsp;Your cart is empty. <a href='#schedule.html'>Click to view schedule</a></td>
+				<tr id="success_swap" class='confirm green'>
+					<td colspan='5'>&nbsp;You have successfully swapped classes!</td>
 				</tr>
 			</table>
 		<!--<br>
@@ -87,10 +89,25 @@
 </div>
 <script type="text/javascript">
 	$(document).ready(function() {
-		$('.confirm').hide();
-		$('#submit').click(function() {
-			$('.before').hide();
-			$('.confirm').toggle();
+		// $('.confirm').hide();
+        $('#confirm_swap').hide();
+        $('#success_swap').hide();
+        
+		$('#submit_swap').click(function() {
+            $('#submit_swap').toggle();
+			$('#confirm_swap').toggle();
+		});
+        
+		$('#confirm_yes').click(function() {
+            $('#submit_swap').prop('disabled', false);
+			$('#confirm_swap').toggle();
+            $('#success_swap').toggle();
+		});
+        
+		$('#confirm_cancel').click(function() {
+            $('#submit_swap').prop('disabled', false);
+			$('#confirm_swap').toggle();
+            $('#submit_swap').toggle();
 		});
 	});
 </script>
