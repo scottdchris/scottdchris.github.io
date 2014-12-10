@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!--PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">-->
+<html>
+<head>
+	<title>CS 325 | Spire</title>
+	<meta http-equiv="content-type"	content="text/html" />
+	<link rel="icon"		type="image/png"media="screen"	href="/images/favicon.png"/>
+	<link rel="stylesheet"	type="text/css"	media="screen"	href="home.css"/>
+	<link rel="stylesheet"	type="text/css"	media="screen"	href="main.css"/>
+	<script src="jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+	<div class="content-wrap">
+		<!-- Header -->
+
+		<!-- Main Content -->
+		<div class="content">
+			<a href='index.html'><h1>SPIRE</h1></a>
+			<ul>
+				<li><a href='search.html' class='button'>Search</a></li>
+				<li><a href='add.html' class='button'>Add</a></li>
+				<li><a href='#drop.html' class='button'>Drop</a></li>
+				<li><a href='swap.html' class='button'>Swap</a></li>
+			</ul>
+			<div>
+				<h2 style='color:#fff'>Swap classes or discussion sections:</h2>
+			</div>
+
+			<table>
+				<th style="text-align:left;" class="header" colspan='5'>Swap</th>
+				<tr>
+					<td class='left' colspan='3'>&nbsp;Select what you want to swap:</td>
+					<td style="width:25%;">&nbsp;<a href="#">Classes</a></td>
+					<td style="width:25%;">&nbsp;<a href="#">Discussion Sections</a></td>
+				</tr>
+				<tr class='before'>
+					<td class='section' colspan='5'>&nbsp; Swap this class:</td>
+				</tr>
+				<tr>
+                    <td style="width:15%;"></td>
+                    <td class='left' colspan='4'>&nbsp;
+                        <select style="width:75%;">
+                            <option value="CMPSCI 325">CMPSCI 325 - Introduction to Usability</option>
+                            <option value="ENGLISH 112">ENGLISH 112 - Introduction to English</option>
+                            <option value="PSYCH 100">PSYCH 100 - Introduction to Psychology</option>
+                            <option value="PSYCH 200">PSYCH 200 - Post-introductory Psychology</option>
+                        </select>
+                    </td>
+				</tr>
+				<tr class='before'>
+					<td class='section' colspan='5'>&nbsp; With this class:</td>
+				</tr>
+                <tr>
+                    <td style="width:15%;">&nbsp;From cart:</td>
+                    <td class='left' colspan='4'>&nbsp;
+                        <select style="width:75%;">
+                            <option value="CMPSCI 325">CMPSCI 325 - Introduction to Usability</option>
+                            <option value="ENGLISH 112">ENGLISH 112 - Introduction to English</option>
+                            <option value="PSYCH 100">PSYCH 100 - Introduction to Psychology</option>
+                            <option value="PSYCH 200">PSYCH 200 - Post-introductory Psychology</option>
+                        </select>
+                    </td>
+				</tr>
+                <tr>
+                    <td style="width:15%;">&nbsp;or </td>
+                    <td class='left' colspan='4'>&nbsp;
+                        <input type="submit" value="Search" href="search.html" />
+                    </td>
+				</tr>
+				<tr class='header'>
+                    <td colspan='5'><input class="green" type="submit" value="SWAP" href="swap.html" /></td>
+				</tr>
+				<tr class='confirm green'>
+					<td class='confirm' colspan='7'>&nbsp;You have successfully enrolled in "Psychology 100"!</td>
+				</tr>
+				<tr class='confirm'>
+					<td class='confirm' colspan='7'>&nbsp;Your cart is empty. <a href='#schedule.html'>Click to view schedule</a></td>
+				</tr>
+			</table>
+		<!--<br>
+		<input class='text' type='text' size='10%'></input>-->
+	</form>
+	<h3>Direct trade Blue Bottle polaroid chambray. Meh hashtag meditation, artisan Shoreditch freegan you probably haven't heard of them messenger bag Portland Godard fanny pack.</h3>
+	<div class='footer'>
+		<p><a href=''>UMass CS 325</a> | <a href='http://scottdchris.com'>ScottDChris.com</a> &copy; 2014</p>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.confirm').hide();
+		$('#submit').click(function() {
+			$('.before').hide();
+			$('.confirm').toggle();
+		});
+	});
+</script>
+</body>
+</html>
