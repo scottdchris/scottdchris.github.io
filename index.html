@@ -1,72 +1,333 @@
-<!DOCTYPE html> <!--PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">-->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Christopher Scott</title>
-	<meta http-equiv="content-type"	content="text/html" />
-	<link rel="icon"		type="image/png"media="screen"	href="/images/favicon.png"/>
-	<link rel="stylesheet"	type="text/css"	media="screen"	href="intro.css"/>
-	<link rel="stylesheet"	type="text/css"	media="screen"	href="style.css"/>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-</head>
-<body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-	<!-- Top Border Line -->
-	<div id="border-top"></div>
-	<div class="content-wrap">
+  <title>Christopher Scott</title>
 
-		<!-- Intro Anitmation Boxes -->
-		<div class="intro">
-			<div class="box1"><p>WELCOME</p></div>
-			<div class="box2"><p>TO</p></div>
-			<div class="box3"><p>MY</p></div>
-			<div class="box4"><p>PORTFOLIO</p></div>
-		</div>	
-		<div id="afterIntro">
-			<div class="main">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-				<!-- Header -->
-				<header>
-					<a href="index.html"><img id = "logo" src="images/weblogo.png"/></a>
-				</header>
+  <!-- Custom styles for this template -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-				<!-- Main Content -->
-				<div class="content" id='frontpage'>
-					<table>
-						<tr>
-							<td id="about">
-								<p>Hello there and welcome to my site. I am currently a senior at the University of Massachusetts Amherst studying <b>Computer Science &amp; Entrepreneurship</b>.</p>
-								<p>To supplement my studies I work as a freelance web developer which allows me to practice the techiniques I've learned as well as explore new languages such as <b>HTML5, CSS3, Java &amp; Python</b>.</p>
-								<p>I spend most of my spare time either in the gym, reading, or managing my personal investment portfolio.</p>
-																<!-- I'm also pretty strict about clean source code -->
-								<a href="resume.pdf"><img title="Christopher Scott's Resume" src="images/ResumeIcon.png"/></a>
-								<a href="http://www.linkedin.com/in/cdscott"><img title="Christopher Scott on LinkedIn" src="images/LinkedInIcon.png"/></a>
-								<a href="https://github.com/scottdchris"><img title="scottdchris on GitHub" src="images/GitHubIcon.png"/></a>
-								<a href="http://www.quora.com/Christopher-Scott-3"><img title="Christopher Scott on Quora" src="images/QuoraIcon.png"/></a>
-							</td>
-							<td id="sepTD"><div class="separator"</div></td>
-							<td id="clients" class="portfolio">
-								<h3>Clients</h3>
-								<br>
-								<div class="button" id="client1"><a href="http://tedxumassamherst.org"><img src="images/TxUMA Button.png"/></a></div>
-								<br>
-								<div class="button" id="client2"><a href="https://umass-ei.squarespace.com/"><img src="images/UMass EI Button.png"/></a></div>
-								<br>
-								<div class="button" id="client3"><a href="http://getunight.com/"><img src="images/client3.png"/></a></div>
-							</td>
-							<td id="projects" class="portfolio">
-								<h3>Projects</h3>
-								<br>
-								<div class="button"><a id="GTW" href="/gtwapp"></a></div>
-								<br>
-								<div class="button"><a id="RC" href="https://github.com/scottdchris/ReinvestmentCalculator"></a></div>
-								<br>
-								<div class="button"><a id="Project3" href="https://github.com/scottdchris/NumToWords"></a></div>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/Chart.min.js"></script>
+  <script src="assets/js/retina.min.js"></script>
+  <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#nav">
+
+   <div id="section-topbar">
+    <div id="topbar-inner">
+     <div class="container">
+      <div class="row">
+       <div class="dropdown">
+        <ul id="nav" class="nav">
+         <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
+         <li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
+         <li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="icon-briefcase"></i></a></li>
+         <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
+       </ul><!--/ uL#nav -->
+     </div><!-- /.dropdown -->
+
+     <div class="clear"></div>
+   </div><!--/.row -->
+ </div><!--/.container -->
+
+ <div class="clear"></div>
+</div><!--/ #topbar-inner -->
+</div><!--/ #section-topbar -->
+
+<div id="headerwrap">
+  <div class="container">
+   <div class="row centered">
+    <div class="col-lg-12">
+     <img src='assets/img/headshot.jpg' id='headshot'/>
+     <h1>Christopher Scott</h1>
+     <h3>Software Engineer | scottdchris@gmail.com</h3>
+   </div><!--/.col-lg-12 -->
+ </div><!--/.row -->
+</div><!--/.container -->
+</div><!--/.#headerwrap -->
+
+
+<section id="about" name="about"></section>
+<div id="intro">
+  <div class="container">
+   <div class="row">
+
+    <div class="col-lg-2 col-lg-offset-1">
+     <h5>ABOUT</h5>
+   </div>
+   <div class="col-lg-6">
+     <p>Hi, my name is Chris and I am currently a senior Computer Science major with a concentration in Entrepreneurship at UMass Amherst. I have a passion for problem solving and innovation that stems as far back into my childhood as I can remember. For this and other reasons, I am excited to focus my CS efforts on ushering in the "Internet of Things" age of computing.</p>
+   </div>
+   <div class="col-lg-3">
+     <p><a href="resume.pdf"><i class="icon-file"></i> <sm class='link'>DOWNLOAD PDF</sm></a></p>
+   </div>
+
+ </div><!--/.row -->
+</div><!--/.container -->
+</div><!--/ #intro -->
+
+
+<section id="resume" name="resume"></section>
+<!--EDUCATION DESCRIPTION -->
+<div class="container desc">
+  <div class="row">
+
+   <div class="col-lg-2 col-lg-offset-1">
+    <h5>EDUCATION</h5>
+  </div>
+  <div class="col-lg-6">
+    <p><t>Bachelor of Arts in Computer Science </t><br/>
+     <i>Concentration: Entrepreneurship</i> <br/>
+     University of Massachusetts Amherst <br/>
+   </p>
+
+ </div>
+ <div class="col-lg-3">
+  <p><sm>GRADUATING MAY 2015</sm><br/>
+   <imp><sm>IN PROGRESS</sm></imp>
+ </p>
+</div>
+
+<div class="col-lg-6 col-lg-offset-3">
+  <p>Baldwin Senior High School <br/>
+  </p>
+</div>
+<div class="col-lg-3">
+  <p><sm>GRADUATED JUNE 2011</sm></p>
+</div>
+
+</div><!--/.row -->
+<br>
+<hr>
+</div><!--/.container -->
+
+
+<!--WORK DESCRIPTION -->
+<div class="container desc">
+  <div class="row">
+
+   <div class="col-lg-2 col-lg-offset-1">
+    <h5>WORK</h5>
+  </div>
+  <div class="col-lg-6">
+    <p><t>Software Engineer Intern</t><br/>
+     SurveyMonkey <br/>
+   </p>
+   <p><more>
+    <ul>
+      <li>Embedded on the Growth team as a full-stack engineer.</li>
+      <li>Developed substantial parts of the company’s new mobile-first web framework.</li>
+      <li>Designed algorithm to handle the end-page rotation logic.</li>
+    </ul>
+  </more></p>
+</div>
+<div class="col-lg-3">
+  <p><sm>JUNE 2014 - AUGUST 2014</sm></p>
+</div>
+
+<div class="col-lg-6 col-lg-offset-3">
+  <p><t>Vice President of Technology</t><br/>
+   TEDxUMassAmherst <br/>
+ </p>
+ <p><more>
+  <ul>
+    <li>Created and managed a new website for TEDxUMassAmhest on Wordpress.</li>
+    <li>Managed the ticket distribution process through Eventbrite and Mailchimp.</li>
+    <li>Served as a technical assistant to the AV crew on the day of the event.</li>
+    <li>Directed the live-streaming process.</li>
+  </ul>
+</more></p>
+</div>
+<div class="col-lg-3">
+  <p><sm>NOVEMBER 2012 - AUGUST 2014</sm></p>
+</div>
+<div class="col-lg-6 col-lg-offset-3">
+  <p><t>Teacher's Assistant</t><br/>
+    University of Massachusetts Amherst <br/>
+  </p>
+  <p><more>
+    <ul>
+      <li>Worked with a phenomenal group of 25 students to found an organization and host TEDxUMassAmherst on April 13, 2013</li>
+      <li>Created and managed the TEDxUMassAmherst website.</li>
+      <li>Designed all TEDxUMassAmherst logos and related materials.</li>
+      <li>Directed the live-streaming process.</li>
+      <li>Organized the master slide deck and all visual media displayed during the event.</li>
+    </ul>
+  </more></p>
+</div>
+<div class="col-lg-3">
+  <p><sm>DECEMBER 2012 - AUGUST 2013</sm></p>
+</div>
+</div><!--/.row -->
+<br>
+<hr>
+</div><!--/.container -->
+
+
+<!--AWARDS DESCRIPTION -->
+<div class="container desc">
+  <div class="row">
+   <div class="col-lg-2 col-lg-offset-1">
+    <h5>AWARDS</h5>
+  </div>
+  <div class="col-lg-6">
+    <p><t>Most Viable Business Potenial: EZ-Park</t><br/>
+     HackUMass 2014 <br/>
+   </p>
+ </div>
+ <div class="col-lg-3">
+  <p><sm>April 2014</sm></p>
+</div>
+
+<div class="col-lg-6 col-lg-offset-3">
+  <p><t>Outstanding Achievement in Computer Science</t><br/>
+   Baldwin Senior High School
+ </p>
+</div>
+<div class="col-lg-3">
+  <p><sm>May 2011</sm></p>
+</div>
+
+</div><!--/.row -->
+<br>
+</div><!--/.container -->
+
+
+<!--PORTFOLIO DESCRIPTION -->
+<div id="portfoliowrap">
+  <div class="container">
+    <div class="row">
+     <div class="col-lg-2 col-lg-offset-1">
+      <h5>PORTFOLIO</h5>
+    </div>
+    <div class="col-lg-3">
+      <p><a href='http://tedxumassamherst.org'><img class="img-responsive" src="assets/img/ted.png" alt="TEDxUMassAmherst"></a></p>
+    </div>
+    <div class="col-lg-3 box">
+      <div class='overlay'>
+        <p><a href='http://getunight.com'><img class="img-responsive image" src="assets/img/unight.png" alt="unight"></a></p>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <p><a href='http://bluprint.herokuapp.com'><img class="img-responsive" src="assets/img/bluprint.png" alt="bluprint"></a></p>
+    </div>
+
+  </div><!--/.row -->
+  <br>
+  <br>
+</div><!--/.container -->
+</div><!--/ #portfoliowrap -->
+
+<!--SKILLS DESCRIPTION -->
+<div id="skillswrap">
+  <div class="container desc">
+   <div class="row">
+    <div class="col-lg-2 col-lg-offset-1">
+     <h5>SKILLS</h5>
+   </div>
+   <div class="col-lg-9 centered">
+    <div class="col-lg-2 col-xs-4">
+      <object data="assets/img/icons/devicons/icons/python/python-original.svg" type="image/svg+xml">
+      </object>
+    </div>
+    <div class="col-lg-2 col-xs-4">
+      <object data="assets/img/icons/devicons/icons/html5/html5-original-wordmark.svg" type="image/svg+xml">
+      </object>
+    </div>
+    <div class="col-lg-2 col-xs-4">
+      <object data="assets/img/icons/devicons/icons/css3/css3-original-wordmark.svg" type="image/svg+xml">
+      </object>
+    </div>
+    <div class="col-lg-2 col-xs-4">
+      <object data="assets/img/icons/devicons/icons/jquery/jquery-original-wordmark.svg" type="image/svg+xml">
+      </object>
+    </div>
+    <div class="col-lg-2 col-xs-4">
+      <object data="assets/img/icons/devicons/icons/java/java-original.svg" type="image/svg+xml">
+      </object>
+    </div>
+    <div class="col-lg-2 col-xs-4">
+      <object data="assets/img/icons/devicons/icons/photoshop/photoshop-line.svg" type="image/svg+xml">
+      </object>
+    </div>
+  </div>
+</div><!--/.row -->
+</div><!--/.container -->
+</div><!--/ #skillswrap -->
+
+
+<section id="contact" name="contact"></section>
+<!--FOOTER DESCRIPTION -->
+<div id="footwrap">
+  <div class="container">
+   <div class="row">
+
+    <div class="col-lg-2 col-lg-offset-1">
+     <h5>CONTACT</h5>
+   </div>
+   <div class="col-lg-3">
+     <p><t>Email</t><br/>
+      <a class='link' href='mailto:scottdchris@gmail.com'>scottdchris@gmail.com </a><br/>
+    </p>
+    <p><t>Phone</t><br/>
+      1 (516) 808-5798 <br/>
+    </p>
+    </div>
+    <div class="col-lg-3">
+      <address>
+        <p><t>Address</t><br/>
+          663 West Carl Avenue <br/>
+          Baldwin, New York <br/>
+          United States of America <br/>
+        </p>
+      </address>
+    </div>
+  <div class="col-lg-3">
+   <p><t>Social Links</t></p>
+   <p id='social'>
+    <a href="#social"><i class="icon-facebook"></i></a>
+    <a href="#social"><i class="icon-twitter"></i></a>
+    <a href="http://linkedin.com/in/cdscott/" target='_blank'><i class="icon-linkedin"></i></a>
+    <a href="http://github.com/scottdchris" target='_blank'><i class="icon-github"></i></a>
+  </p>
+</div>
+</div><!--/.row -->
+</div><!--/.container -->
+</div><!--/ #footer -->
+
+    <!--<div id="c">
+        <div class="container">
+            <p>Created by <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
+        
+        </div>
+      </div>-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.js"></script>
+  </body>
+  </html>
