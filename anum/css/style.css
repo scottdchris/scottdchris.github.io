@@ -35,6 +35,7 @@ body a{
 }
 .header_left ul{
 	list-style: none;
+	padding: 0;
 }
 .profile img {
 	margin: 3.5em auto;
@@ -77,6 +78,7 @@ ul.social li a i.google {
 .header_right {
 	background-color: #7BCEC4;
 	min-height:520px;
+	padding:0;
 	text-align: center;
 }
 .slide {
@@ -126,12 +128,12 @@ img.zoom-img {
 	-moz-transition-duration: 250ms;
 }
 img.zoom-img:hover {
-	-webkit-transform: scale(1.15);
+	-webkit-transform: scale(1.10);
 	-webkit-transition-timing-function: ease-out;
-	-webkit-transition-duration: 750ms;
-	-moz-transform: scale(1.15);
+	-webkit-transition-duration: 300ms;
+	-moz-transform: scale(1.10);
 	-moz-transition-timing-function: ease-out;
-	-moz-transition-duration: 750ms;
+	-moz-transition-duration: 300ms;
 	overflow: hidden;
 }
 .subscribe {
@@ -205,50 +207,6 @@ ul.s_social li a i.google1 {
 }
 ul.s_social li a i:hover{
 	opacity:0.6;
-}
-p.popup_desc{
-	margin-top:20px;
-}
-.info {
-	display: inline-block;
-	text-decoration: none;
-	padding:20px 10px;
-	background:#fd5000;
-	color: #fff;
-	text-transform: uppercase;
-	float:left;
-}
-.info:hover {
-	background:#f8c255;
-}
-.date{
-	margin-bottom:1em;
-}
-time {
-	color: #777;
-	font-size: 0.85em;
-	font-weight: 400;
-}
-p.news_desc{
-	color: #777;
-	font-size: 0.85em;
-	line-height: 1.8em;
-	text-align: justify;
-	margin: 1.5em 0 0 0;
-	font-weight: 400;
-}
-.btn1 {
-	display: inline-block;
-	color:#fd5000;
-	font-size:0.85em;
-	float:right;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin-top: 10px;
-}
-.btn1:hover{
-	text-decoration:none;
-	color:#000;
 }
 /*--footer--*/
 .footer {
