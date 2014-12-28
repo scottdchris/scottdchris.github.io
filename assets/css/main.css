@@ -159,7 +159,7 @@ hr {
     /* Header Wrap */
     #headerwrap {
      background: url(../img/chrysler-bg@2x.png) no-repeat center top;
-     padding: 14% 0 0;
+     padding: 200px 0 0;
      text-align:center;
      background-attachment: relative;
      background-position: center center;
@@ -331,4 +331,11 @@ hr {
 /* if you want to change the original color */
 .devicon-git-plain path {
   fill: #4691f6;
+}
+
+/*--media queries--*/
+@media (max-width:500px){
+    #headerwrap h1 {
+        font-size: 60px;
+    }
 }
