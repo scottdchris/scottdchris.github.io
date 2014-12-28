@@ -263,12 +263,9 @@ ul.s_social li a i:hover{
 	}
 }
 @media (max-width:800px){
-	.profile img {
-		width: 90%;
-	}
 	.project_left {
-		padding-top:3em;
-		min-height: 300px;
+		min-height: 400px;
+		height: auto;
 	}
 	.header_left, .header_right{
 		min-height: 300px;
@@ -276,21 +273,16 @@ ul.s_social li a i:hover{
 }
 
 @media (max-width:480px){
+	.profile img {
+		width: 90%;
+	}
 	.header_left {
 		padding: 1em 1em 0em 1em;
 		min-height:260px;
-	}
-	.project_left {
-		padding: 2em auto;
-		min-height: 300px;
 	}
 }
 @media (max-width:320px){
 	ul.social {
 		display: none;
-	}
-	.project_left {
-		padding-top: 2em;
-		min-height: 230px;
 	}
 }
