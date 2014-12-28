@@ -217,12 +217,13 @@ ul.s_social li a i:hover{
 }
 /*--footer--*/
 .footer {
-	padding: 0 100px;
 	margin: 0 auto;
+	padding: 0 100px;
 	width: 87%;
 }
 .footer-text {
-	padding: 100px 100px 50px;
+	margin: 0 auto;
+	width: 87%;
 	text-align: center;
 }
 
@@ -262,29 +263,26 @@ ul.s_social li a i:hover{
 	}
 }
 @media (max-width:800px){
+	.profile img {
+		width: 90%;
+	}
 	.project_left {
 		padding-top:3em;
 		min-height: 300px;
 	}
-	.header_left {
+	.header_left, .header_right{
 		min-height: 300px;
-	}
-	.header_right {
-		min-height: 300px;
-	}
-	.container_wrap {
-		margin: 0 auto;
-		width: 90%;
 	}
 }
+
 @media (max-width:480px){
 	.header_left {
 		padding: 1em 1em 0em 1em;
 		min-height:260px;
 	}
-	.container_wrap {
-		margin: 0 auto;
-		width: 97%;
+	.project_left {
+		padding: 2em auto;
+		min-height: 300px;
 	}
 }
 @media (max-width:320px){
