@@ -223,6 +223,7 @@ ul.s_social li a i:hover{
 }
 .footer-text {
 	margin: 0 auto;
+	padding: 1.5em .8em;
 	width: 87%;
 	text-align: center;
 }
@@ -260,6 +261,10 @@ ul.s_social li a i:hover{
 	}
 	.footer {
 		padding: 0;
+		width: 386px;
+	}
+	.footer iframe{
+		width: auto;
 	}
 }
 @media (max-width:800px){
