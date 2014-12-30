@@ -30,6 +30,10 @@ body a {
 .logo h1 {
 	font-family: 'Satisfy', cursive;
 }
+.logo a:hover {
+	text-decoration: none;
+}
+
 .menu {
 	float: right;
 }
@@ -303,6 +307,7 @@ p.m_2 {
 .testimonial_bottom {
 	margin: 0 auto;
 	width: 90%;
+
 }
 ul.test_box {
 	padding: 0;
@@ -359,9 +364,13 @@ a:focus {
 	color: #E4551D;
 }
 
-.footer_midle {
+.footer_middle.blog {
+	border-top: 1px solid #E6E6E6;
+}
+.footer_middle {
 	padding: 2.1em 0;
 	background-color: #f6f6f6;
+	border-bottom: 1px solid #E6E6E6;
 }
 ul.social_left {
 	padding: 0;
@@ -372,7 +381,7 @@ ul.social_left li.social {
 	margin-right: 1em;
 }
 ul.social_left li.social_text h4 a {
-	color: #666;
+	color: #555;
 	font-size: 0.9em;
 	font-weight: 600;
 	transition: none;
@@ -396,42 +405,38 @@ ul.social_left li.social_text {
 }
 .footer_bottom {
 	padding: 2em 0;
-	background: #7cc4cc;
+	background: #FFF;
 }
 .copy {
 	text-align: center;
 }
 .copy p {
 	font-size: 1em;
-	color: #fff;
+	color: #333;
 }
 .copy p a {
-	color: #fff;
-	border-bottom: 1px dotted;
+	color: #333;
+	/*border-bottom: 1px dotted;*/
 }
 .copy p a:hover {
-	color: #fff;
-	border-bottom: 1px solid;
-	text-decoration: none;
+	color: #E4551D;
 }
 .about {
-	background: #7cc4cc;
+	background: #F6F6F6;
+	border-top: 1px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
 	margin-bottom: 4em;
 }
 .title-section {
-	background: #7cc4cc;
 	position: relative;
-	padding-top: 30px;
-	padding-right: 0;
-	padding-left: 0;
-	padding-bottom: 20px;
+	padding: 1.5em 0;
 }
 .title-section h1 {
 	margin: 0 0 5px 0;
 	line-height: 58px;
 	font-size: 40px;
 	font-weight: 600;
-	color: #fff;
+	color: #555;
 }
 .title-section ul {
 	background: none;
@@ -598,17 +603,17 @@ ul.links li {
 	margin-right: 20px;
 }
 .fa-calendar, .fa-user, .fa-comments {
-	color: #7cc4cc;
+	color: #888;
 }
 .blog_btn {
-	margin-top: 2em;
-	display: inline-block;
-	padding: 8px 20px;
-	font-size: 1em;
+	background: #f6f6f6;
+	border: 1px solid #E6E6E6;
+	color: #777;
 	cursor: pointer;
-	border: none;
-	background: #7cc4cc;
-	color: #fff;
+	display: inline-block;
+	font-size: 1em;
+	margin-top: 2em;
+	padding: 8px 20px;
 	text-decoration: none;
 	outline: none;
 	-webkit-transition: all 0.3s;
@@ -621,9 +626,11 @@ ul.links li {
 	-o-border-radius: 5px;
 }
 .blog_btn:hover {
-	text-decoration: none;
-	background: #6fb0b7;
+	background: #E4551D;
+	border: 1px solid #fff;
 	color: #fff;
+	text-decoration: none;
+
 }
 .pagination__posts {
 	margin-top: 3em;
@@ -647,7 +654,7 @@ ul.links li {
 	border-left-width: 1px;
 }
 .pagination ul > .active > a, .pagination ul > .active > span {
-	color: #999;
+	color: #777;
 	cursor: default;
 }
 .pagination ul > li > a:hover, .pagination ul > li > a:focus, .pagination ul > .active > a, .pagination ul > .active > span {
@@ -670,11 +677,11 @@ ul.sidebar {
 ul.sidebar h3 {
 	font-size: 25px;
 	font-weight: 500;
-	color: #7cc4cc;
+	color: #333;
 	margin: 0 0 1em 0;
 	padding: 0 0 10px 0;
 	border-bottom: 1px solid #eee;
-	border-left: 0px solid #7cc4cc;
+	border-left: 0px solid #333;
 }
 ul.sidebar li {
 	margin: 0 0 10px 0;
