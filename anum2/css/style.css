@@ -11,6 +11,9 @@ html, body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 100%;
 	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 body a {
 	transition: 0.5s all;
@@ -31,6 +34,7 @@ body a {
 	font-family: 'Satisfy', cursive;
 }
 .logo a:hover {
+	color: #FFA07A;
 	text-decoration: none;
 }
 
@@ -55,14 +59,14 @@ body a {
 	font-weight: 600;
 }
 #nav .current a {
-	color: #E4551D;
+	color: #FFA07A;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 .menu li a:hover, .menu li.active a {
-	color: #E4551D;
+	color: #FFA07A;
 	background: #fff !important;
 }
 .toggleMenu {
@@ -107,7 +111,7 @@ body a {
 		background: #051619;
 		top: 86px;
 		z-index: 9999;
-		border: 1px solid #B11D1D;
+		border: 1px solid #333;
 	}
 	.menu li a span {
 		text-align: center;
@@ -134,7 +138,7 @@ body a {
 		position: static;
 	}
 	.nav li a {
-		border-top: 1px solid #B11D1D;
+		border-top: 1px solid #333;
 		background: #fff;
 	}
 	.nav li:first-child a {
@@ -215,7 +219,7 @@ h3.m_1 a {
 	text-decoration: none;
 }
 h3.m_1 a:hover {
-	color: #e4551d;
+	color: #FFA07A;
 }
 p.m_2 {
 	color: #666;
@@ -239,8 +243,8 @@ p.m_2 {
 }
 .feature_btn:hover {
 	background: #fff;
-	color: #e4551d;
-	border: 1px solid #e4551d;
+	color: #FFA07A;
+	border: 1px solid #FFA07A;
 	text-decoration: none;
 }
 #flexiselDemo3 {
@@ -329,7 +333,7 @@ ul.test_box li.test_desc h4 a {
 	text-decoration: none;
 }
 ul.test_box li.test_desc h4 a:hover {
-	color: #E4551D;
+	color: #FFA07A;
 }
 ul.test_box li.test_desc p {
 	color: #888;
@@ -340,10 +344,10 @@ a:focus {
 	outline: 0px;
 }
 .fa {
-	color: #E4551D;
+	color: #FFA07A;
 }
 .service_box .fa, .feature_grid1 .fa, .feature_grid2 .fa, .banner-info .fa {
-	color: #E4551D;
+	color: #FFA07A;
 }
 .fa-facebook-square:hover {
 	color: #3b5998;
@@ -352,7 +356,7 @@ a:focus {
 	color: #00aced;
 }
 .fa-twitter-square:hover {
-	color: #E4551D;
+	color: #FFA07A;
 }
 .fa-google-plus-square:hover {
 	color: #dd4b39;
@@ -361,7 +365,7 @@ a:focus {
 	color: #007bb6;
 }
 .fa-linkedin-square:hover {
-	color: #E4551D;
+	color: #FFA07A;
 }
 
 .footer_middle.blog {
@@ -391,7 +395,7 @@ ul.social_left li.social_text h4 a {
 	-ms-transition: none;
 }
 ul.social_left li.social_text h4 a:hover {
-	color: #E4551D;
+	color: #FFA07A;
 	text-decoration: none;
 }
 ul.social_left li.social_text p {
@@ -419,7 +423,7 @@ ul.social_left li.social_text {
 	/*border-bottom: 1px dotted;*/
 }
 .copy p a:hover {
-	color: #E4551D;
+	color: #FFA07A;
 }
 .about {
 	background: #F6F6F6;
@@ -481,7 +485,7 @@ ul.about_grid1 li.about_desc h5 a {
 	font-size: 1.2em;
 }
 ul.about_grid1 li.about_desc h5 a:hover {
-	color: #E4551D;
+	color: #FFA07A;
 	text-decoration: none;
 }
 ul.about_grid1 li.about_desc p {
@@ -506,8 +510,8 @@ ul.about_grid1 li.about_desc p {
 }
 .about_btn:hover {
 	background: #fff;
-	color: #E4551D;
-	border: 1px solid #E4551D;
+	color: #FFA07A;
+	border: 1px solid #FFA07A;
 	text-decoration: none;
 }
 .about_box {
@@ -550,7 +554,7 @@ div.list.custom-list ul li {
 }
 .service_box h5 a:hover {
 	text-decoration: none;
-	color: #E4551D;
+	color: #FFA07A;
 }
 .service_box p {
 	font-size: 1em;
@@ -574,7 +578,7 @@ h2.post_title a {
 }
 h2.post_title a:hover {
 	text-decoration: none;
-	color: #E4551D;
+	color: #FFA07A;
 }
 .blog_grid p {
 	font-size: 1em;
@@ -626,7 +630,7 @@ ul.links li {
 	-o-border-radius: 5px;
 }
 .blog_btn:hover {
-	background: #E4551D;
+	background: #FFA07A;
 	border: 1px solid #fff;
 	color: #fff;
 	text-decoration: none;
