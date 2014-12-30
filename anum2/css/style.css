@@ -294,7 +294,7 @@ p.m_2 {
 .testimonial {
 	border-top: 1px solid #e6e6e6;
 	background-color: #F6F6F6; 
-	padding: 4em 0;
+	padding: 4em 0 1px;
 }
 .test_header {
 	text-align: center;
@@ -1046,6 +1046,9 @@ ul.sidebar li a {
 	background-color: #FBFBFB;
 	text-align: center;
 	width: 50%;
+}
+.testimonial iframe {
+	width: 100% !important;
 }
 
 
