@@ -168,7 +168,7 @@ body a {
 	font-weight: 500;
 	letter-spacing: 2px;
 	line-height: 1.8em;
-	margin-top: 1em;
+	margin: 1em auto;
 }
 .banner-btn {
 	margin-top: 2.5em;
@@ -1051,7 +1051,10 @@ ul.sidebar li a {
 }
 .titles {
 	list-style: none;
+	margin: 0 auto;
 	padding: 0;
+	text-align: left;
+	width: 310px;
 }
 #hs_form_target_module_14112795008571132 {
 	margin: 0 auto;
