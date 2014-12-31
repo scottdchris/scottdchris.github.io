@@ -369,6 +369,7 @@ a:focus {
 
 .footer_middle.blog {
 	border-top: 1px solid #E6E6E6;
+	text-align: center;
 }
 .footer_middle {
 	padding: 2.1em 0;
@@ -591,6 +592,7 @@ div.list.custom-list ul li {
 	width: 100%;
 }
 .blog_sidebar .hs-button {
+	margin-bottom: 2em;
 	width: 100%;
 }
 .blog_grid {
