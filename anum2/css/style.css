@@ -306,13 +306,9 @@ p.m_2 {
 }
 .testimonial_top {
 	width: 90%;
-	margin:0 auto 2em;
+	margin:0 auto 1em;
 }
-.testimonial_bottom {
-	margin: 0 auto;
-	width: 90%;
 
-}
 ul.test_box {
 	padding: 0;
 	list-style: none;
@@ -871,6 +867,9 @@ ul.sidebar li a {
 	.contact-to input[type="text"] {
 		width: 32%;
 	}
+	#carousel, .item {
+		height: auto;
+	}
 }
 
 @media (max-width:640px) {
@@ -1056,7 +1055,7 @@ ul.sidebar li a {
 }
 
 #carousel, .item {
-	height: 186px;
+	height: 215px;
 }
 .carousel-control{
 	background-image: none !important;
