@@ -183,6 +183,9 @@ a.banner-btn span {
 a.banner-btn span:hover {
 	opacity: 0.9;
 }
+.headshot {
+	width: 250px;
+}
 .content_white {
 	text-align: center;
 	padding: 3em 0;
@@ -422,6 +425,7 @@ ul.social_left li.social_text {
 	color: #FFA07A;
 }
 .copy p.personal {
+	margin: 4px 0 0;
 	color: #777;
 	font-size: .5em;
 }
@@ -564,7 +568,30 @@ div.list.custom-list ul li {
 	text-align: left;
 }
 .blog_sidebar {
+	background: #F6F6F6;
+	border: 1px solid #E6E6E6;
+	float: right;
+	padding: 1em 1.5em 1.5em;
+	width: 30%;
+}
+.blog_sidebar.content {
+	background: #F6F6F6;
+	border: 1px solid #E6E6E6;
 	padding: 5px 20px 0 70px;
+}
+.blog_sidebar h1 {
+	font-weight: 600;
+	margin-bottom: 16px;
+	text-align: center;
+}
+.blog_sidebar .headshot {
+	width: 100%;
+}
+.blog_sidebar .hs-input {
+	width: 100%;
+}
+.blog_sidebar .hs-button {
+	width: 100%;
 }
 .blog_grid {
 	margin-bottom: 3em;
@@ -676,7 +703,6 @@ ul.links li {
 ul.sidebar {
 	padding: 0;
 	list-style: none;
-	margin-bottom: 50px;
 }
 ul.sidebar h3 {
 	font-size: 25px;
@@ -1005,9 +1031,6 @@ ul.sidebar li a {
 /* Custom Styling */
 .title {
 	font-family: serif;
-}
-.headshot {
-	width: 250px;
 }
 .titles {
 	list-style: none;
