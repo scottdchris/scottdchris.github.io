@@ -589,6 +589,10 @@ div.list.custom-list ul li {
 .blog_sidebar .headshot {
 	width: 100%;
 }
+.blog_sidebar #hs_form_target_module_14112795008571132 {
+	padding: 0;
+	width: 100%
+}
 .blog_sidebar .hs-input {
 	width: 100%;
 }
