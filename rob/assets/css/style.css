@@ -324,6 +324,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+#aboutwrap h3 {
+    font-size: 36px;
+}
+
 #aboutwrap i {
     margin: 0 20px 0 0;
 }
@@ -516,3 +520,24 @@ h1, h2, h3, h4, h5, h6 {
 .desc {
 	margin-top: 25px;
 }
+
+@media (max-width:479px){
+    #aboutwrap h3 {
+        display: inline-block;
+    }
+    .iconText {
+        display: none;
+    }
+}
+
+/* Media Queries */
+@media (max-width:767px){
+    .iconText {
+        font-size: 24px;
+    }
+        #aboutwrap i {
+        margin: 0 10px;
+    }
+}
+
+
