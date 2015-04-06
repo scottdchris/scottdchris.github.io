@@ -354,8 +354,16 @@ h1, h2, h3, h4, h5, h6 {
     margin: 80px 0 0;
 }
 
-.vapr img{
-    width: 100%
+#vaprdiv{
+    left:0;
+}
+
+#vaprimg{
+    width: 150%
+}
+
+#vaprdiv #vaprimg {
+    height: 674px;
 }
 
 /* Portfolio Wrap Section */
