@@ -526,6 +526,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 25px;
 }
 
+.sep img {
+    width: 100%;
+}
+
 @media (max-width:479px){
     #aboutwrap h3 {
         display: inline-block;
