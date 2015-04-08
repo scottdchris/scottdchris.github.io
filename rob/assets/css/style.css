@@ -531,6 +531,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width:479px){
+    #headerwrap h1 {
+        font-size: 72px;
+    }
+
     #aboutwrap h3 {
         display: inline-block;
     }
@@ -541,7 +545,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Media Queries */
 @media (max-width:767px){
-    #portfoliowrap{
+    #portfoliowrap, #servicewrap, #contactwrap{
         margin-top: 0;
     }
 
