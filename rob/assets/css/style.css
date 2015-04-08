@@ -359,11 +359,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #vaprimg{
-    width: 150%
+    /*width: 150%*/
 }
 
 #vaprdiv #vaprimg {
-    height: 674px;
+    /*height: 674px;*/
 }
 
 /* Portfolio Wrap Section */
