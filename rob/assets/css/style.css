@@ -359,6 +359,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+#vaprimg{
+    width: 100%;
+}
+
 /* Portfolio Wrap Section */
 #portfoliowrap {
 	display: block;
@@ -522,17 +526,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 25px;
 }
 
-.sep img{
-    display: none;
-}
-
 @media (max-width:479px){
-
-    .sep img{
-        display: block;
-        width: 100%;
-    }
-
     #aboutwrap h3 {
         display: inline-block;
     }
@@ -543,6 +537,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Media Queries */
 @media (max-width:767px){
+    #portfoliowrap{
+        margin-top: 0;
+    }
+
     .iconText {
         font-size: 24px;
     }
