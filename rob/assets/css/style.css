@@ -354,18 +354,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-#vaprdiv{
+.vaprdiv{
     margin: 80px 0 0;
     padding: 0;
-    right: 50%;
-}
-
-#vaprimg{
-    width: 100%;
-}
-
-#vaprdiv #vaprimg {
-    /*height: 674px;*/
 }
 
 /* Portfolio Wrap Section */
