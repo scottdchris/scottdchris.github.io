@@ -14,7 +14,7 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" media="only screen and (min-width: 769px)" data-skrollr-stylesheet>
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/js/fancybox/jquery.fancybox.css" rel="stylesheet" />
 
@@ -211,25 +211,29 @@
 	<script src="assets/js/fancybox/jquery.fancybox.js"></script>    
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/skrollr.min.js"></script>
+	<script src="assets/js/modernizr.js"></script>
     
-		<script>
+	<script type="text/javascript">
 		$(function(){
 			$.stellar({
 				horizontalScrolling: false,
 				verticalOffset: 40
 			});
 		});
-		</script>
 		
-		<script type="text/javascript">
-      $(function() {
-        //    fancybox
-          jQuery(".fancybox").fancybox();
-      });
+		
+		$(function() {
+        // fancybox
+        jQuery(".fancybox").fancybox();
+    });
 
-
-         var s = skrollr.init();
-	   </script>
+		var s = skrollr.init();
+		
+		// Check for touch
+		if(Modernizr.touch) {
+			s.destroy();
+		}
+	</script>
 
   </body>
 </html>
