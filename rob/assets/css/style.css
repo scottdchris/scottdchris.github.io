@@ -541,9 +541,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Media Queries */
 @media (max-width:767px){
-    #portfoliowrap, #servicewrap, #contactwrap{
-        margin-top: 0;
-    }
     .name-desc {
         text-align: center;
     }
