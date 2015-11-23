@@ -1,0 +1,74 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    height: 100%;
+    margin: 0;
+    position: relative;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+a:link {
+    color: #555;
+}
+
+a:visited {
+    color: #555;
+}
+
+/* mouse over link */
+a:hover {
+    color: #999;
+}
+
+/* selected link */
+a:active {
+    color: #999;
+}
+
+.content {
+    height: 550px;
+    margin-top: -275px;
+    min-height: 500px;
+    padding: 0 5%;
+    position: absolute;
+    top: 50%;
+}
+
+.name {
+    font-size: 3em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.hide {
+    display: none;
+}
+
+.other {padding: 0}
+.other a {text-decoration: none;}
+.other a:hover {
+    border-bottom: solid 2px;
+    padding-bottom: 5px;
+}
+.other li {
+    display: inline-block;
+    padding: 10px 15px;
+}
+.other li:first-of-type{padding-left: 0;}
+
+.other-list ul {padding:0;}
+.other-list li {display:block;}
