@@ -6,8 +6,8 @@ body {
     font-family: "Raleway", sans-serif;
     height: 100%;
     margin: 0;
+    overflow: hidden;
     position: relative;
-
     -webkit-font-smoothing: antialiased;
 }
 
