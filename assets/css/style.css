@@ -6,9 +6,12 @@ body {
     font-family: "Raleway", sans-serif;
     height: 100%;
     margin: 0;
-    overflow: hidden;
     position: relative;
     -webkit-font-smoothing: antialiased;
+}
+
+body .no-overflow {
+    overflow: hidden;
 }
 
 /* Titles */
@@ -40,10 +43,13 @@ a:active {
 }
 
 .content {
-    height: 550px;
-    margin-top: -275px;
     min-height: 500px;
     padding: 0 5%;
+}
+
+.static {
+    height: 550px;
+    margin-top: -275px;
     position: absolute;
     top: 50%;
 }
@@ -53,6 +59,9 @@ a:active {
     margin-bottom: 0;
     text-transform: uppercase;
 }
+.name a {text-decoration: none;}
+.name a:link, .name a:visited {color: #000;}
+.name a:hover {color: #555;}
 
 .hide {
     display: none;
