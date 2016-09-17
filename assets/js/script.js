@@ -5,7 +5,7 @@ $(document).ready(function(){
         $('.hide').hide();
         $(this).css('padding-bottom', '5px');
         $(this).css('border-bottom','solid 2px');
-        var section = '#' + $(this).text();
+        var section = $(this).attr('href');
         $(section).fadeIn();
     });
 });
