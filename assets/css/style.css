@@ -24,23 +24,15 @@ h1 {
     font-weight: 700;
 }
 
-a:link {
-    color: #555;
-}
+a:link {color: #555;}
 
-a:visited {
-    color: #555;
-}
+a:visited {color: #555;}
 
 /* mouse over link */
-a:hover {
-    color: #999;
-}
+a:hover {color: #999;}
 
 /* selected link */
-a:active {
-    color: #999;
-}
+a:active {color: #999;}
 
 .content {
     min-height: 500px;
@@ -48,8 +40,9 @@ a:active {
 }
 
 .static {
-    height: 550px;
+    margin-bottom: 50px;
     margin-top: -275px;
+    min-width: 600px;
     position: absolute;
     top: 50%;
 }
@@ -66,6 +59,17 @@ a:active {
 .hide {
     display: none;
 }
+
+.recently-wrote li {
+    margin: 8px auto;
+}
+
+.goodreads-rss .feed-title {display: none;}
+.goodreads-rss .feed-item-title {
+    display: list-item;
+    margin: 8px auto;
+}
+.goodreads-rss .feed-item-title a {border-bottom: none !important;}
 
 .other {padding: 0}
 .other a {text-decoration: none;}
