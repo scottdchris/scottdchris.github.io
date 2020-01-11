@@ -4,7 +4,6 @@ $(document).ready(function(){
         $('a').css('border-bottom','0');
         $('.hide').hide();
         $(this).css('padding-bottom', '5px');
-        $(this).css('border-bottom','solid 2px');
         var section = $(this).attr('href');
         $(section).fadeIn();
     });

@@ -42,19 +42,24 @@ a:active {color: #999;}
 .static {
     margin-bottom: 50px;
     margin-top: -325px;
-    min-width: 600px;
     position: absolute;
     top: 50%;
 }
 
 .name {
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 0;
     text-transform: uppercase;
 }
 .name a {text-decoration: none;}
 .name a:link, .name a:visited {color: #000;}
 .name a:hover {color: #555;}
+
+.handle {
+    color: #999;
+    font-size: 1.35em;
+    margin-top: 0;
+}
 
 .hide {
     display: none;
@@ -78,10 +83,17 @@ a:active {color: #999;}
     padding-bottom: 5px;
 }
 .other li {
-    display: inline-block;
-    padding: 10px 15px;
+    list-style-type: none;
+    padding: 10px 0;
 }
-.other li:first-of-type{padding-left: 0;}
+
+
+@media screen and (min-width: 600px) {
+    .other li {
+        display: inline-block;
+        padding: 10px 15px;
+    }
+}
 
 .other-list ul {padding:0;}
 .other-list li {display:block;}
