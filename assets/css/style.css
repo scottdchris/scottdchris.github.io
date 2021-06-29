@@ -46,6 +46,20 @@ a:active {color: #999;}
     top: 50%;
 }
 
+.punk-wrapper {
+    display: inline-block;
+    margin-right: .7rem;
+}
+
+.punk {
+    border-radius: 100%;
+    margin-bottom: -8px;
+    width: 77px;
+}
+
+.intro-block {
+    display: inline-block;
+}
 .name {
     font-size: 2em;
     margin-bottom: 0;
@@ -57,7 +71,7 @@ a:active {color: #999;}
 
 .handle {
     color: #999;
-    font-size: 1.35em;
+    font-size: 1.1em;
     margin-top: 0;
 }
 
