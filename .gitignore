@@ -1,4 +1,5 @@
 *.psd
+.idea
 /anum/
 /anum2/
 /archive/
