@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
     height: 100%;
     margin: 0;
     position: relative;
@@ -24,7 +24,7 @@ h1 {
     font-weight: 700;
 }
 
-a:link {color: #555;}
+a:link {color: #333;}
 
 a:visited {color: #555;}
 
@@ -89,6 +89,7 @@ a:active {color: #999;}
     margin: 8px auto;
 }
 .goodreads-rss .feed-item-title a {border-bottom: none !important;}
+.goodreads-rss div {display: none;}
 
 .other {padding: 0}
 .other a {text-decoration: none;}
