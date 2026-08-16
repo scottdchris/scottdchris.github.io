@@ -2,97 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Software Engineer Python MySQL HTML CSS Javascript Jinja2 Docker SQLAlchemy Personal Webpage">
-  <meta name="author" content="Chris Scott">
-  <!-- <link rel="shortcut icon" href="assets/img/favicon.png"> -->
-
-  <title>Chris Scott (@notyouravgcoder)</title>
-
-  <!-- Bootstrap core CSS -->
-  <!-- <link href="assets/css/bootstrap.css" rel="stylesheet"> -->
-
-  <!-- Custom styles for this template -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Exo:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
-
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chris Scott | @notyouravgcoder</title>
+  <meta name="description" content="Chris Scott — Growth Engineering">
+  <link rel="icon" href="assets/img/cp5627.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #0437F2;
+      --accent-deep: #032bc0;
+      --ink: #1c1a17;
+      --paper: #faf7f1;
+      --rule: #e8e0d2;
+      --muted: #8f8a80;
+      --muted-2: #6d675d;
+      --year: #b6ac99;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Archivo", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+      min-height: 100vh;
+    }
+    main { width: 100%; max-width: 640px; display: flex; flex-direction: column; }
+    header {
+      display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
+      padding-bottom: 30px; border-bottom: 2px solid var(--ink);
+    }
+    .avatar {
+      width: 84px; border-radius: 100%; image-rendering: pixelated;
+      box-shadow: 0 0 0 3px var(--paper), 0 0 0 5px var(--accent);
+    }
+    .id { flex: 1; min-width: 200px; }
+    h1 { font: 700 36px "Space Grotesk", sans-serif; letter-spacing: -0.02em; margin: 0; }
+    .handle { font: 500 14px "IBM Plex Mono", monospace; color: var(--accent-deep); margin-top: 5px; }
+    .contact-btn {
+      font: 500 13px "IBM Plex Mono", monospace; color: var(--ink); text-decoration: none;
+      border: 1.5px solid var(--ink); border-radius: 999px; padding: 9px 18px; white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+    }
+    .contact-btn:hover { background: var(--ink); color: var(--paper); }
+    .bio {
+      padding: 26px 0; border-bottom: 1px solid var(--rule);
+      font-size: 17px; line-height: 1.6; color: #3d3a34;
+    }
+    .bio a {
+      color: var(--ink); font-weight: 600;
+      text-decoration-color: var(--accent); text-decoration-thickness: 2px;
+    }
+    .bio a:hover { color: var(--accent-deep); }
+    .section { padding: 26px 0 6px; display: flex; flex-direction: column; }
+    .section-label {
+      font: 600 11px "IBM Plex Mono", monospace; letter-spacing: 0.14em;
+      color: var(--accent-deep); margin-bottom: 8px;
+    }
+    .item {
+      display: grid; grid-template-columns: 52px 1fr auto; gap: 18px; align-items: baseline;
+      text-decoration: none; color: var(--ink); padding: 13px 0; border-bottom: 1px solid var(--rule);
+    }
+    .item:hover { color: var(--accent-deep); }
+    .item .year { font: 400 13px "IBM Plex Mono", monospace; color: var(--year); }
+    .item .title { font-size: 16px; }
+    .item .kind { font: 400 12px "IBM Plex Mono", monospace; color: var(--muted); }
+    footer {
+      padding-top: 26px; display: flex; gap: 24px; flex-wrap: wrap;
+      font: 500 13px "IBM Plex Mono", monospace;
+    }
+    footer a { color: var(--muted-2); text-decoration: none; }
+    footer a:hover { color: var(--ink); }
+    footer .reads { margin-left: auto; }
+    @media (max-width: 540px) {
+      .item { grid-template-columns: 44px 1fr; }
+      .item .kind { display: none; }
+      footer .reads { margin-left: 0; }
+    }
+  </style>
 </head>
-
-<body class='no-overflow'>
-  <div class='content static'>
-    <div class="punk-wrapper"><img class="punk" src="assets/img/cp5627.png"/></div>
-    <div class="intro-block">
-      <h1 class='name'><a href='/'>Chris Scott</a></h1>
-      <h2 class='handle'>&commat;notyouravgcoder</h2>
-    </div>
-    <p>Current: Founder &amp; CEO &commat; <a href='//gmi.xyz/' target="_blank">GMI Capital</a></p>
-    <p>Past: Growth &commat; <a href='//www.surveymonkey.com/' target="_blank">SurveyMonkey</a></p>
-<!--    <p>Past: <a href='//talkingpear.com/' target="_blank">TalkingPear</a>, E-House, <a href='//www.youtube.com/results?search_query=%22tedxumassamherst%22&sp=QgIIAQ%253D%253D' target="_blank">TEDxUMassAmherst</a>-->
-    </p>
-    <p>Press:</p>
-    <ul class='press'>
-      <li><a target="_blank" href='https://blockworks.co/news/jakpot-games-pay-to-play-arcade'>Solana-based Jakpot Games launches pay-to-play arcade</a> (Blockworks, 2025)</li>
-    </ul>
-    <p>I Recently Published:</p>
-    <ul class='recently-wrote'>
-      <li><a target="_blank" href='https://notyouravgcoder.substack.com/p/forget-the-401k-use-your-money-to'>Forget the 401(k): Use Your Money to Move Faster</a>  (Blog Post, 2025)</li>
-     <li><a target="_blank" href='https://www.buzzsprout.com/1859738/9618941'>NFT Heat #15: Chris Scott, Founder of GMI Capital Crypto Fund </a> (Podcast, 2021)</li>
-      <li><a target="_blank" href='https://medium.com/curiosity-by-design/how-a-b-experiments-drive-growth-at-surveymonkey-bea83b3138c0?source=friends_link&sk=7e2dea3bae78fd8f076764649574628b'>How A/B Experiments Drive Growth at SurveyMonkey</a> (Blog Post, 2020)</li>
-      <li><a target="_blank" href="https://gettingaround.teachable.com/">Getting Around: The Car Sharing Blueprint</a> (Online Course, 2019)</li>
-      <li><a target="_blank" href='https://www.linkedin.com/pulse/5-ways-drive-success-being-social-christopher-scott'>5 Ways to Drive Success by Being Social</a> (Blog Post, 2017)</li>
-    </ul>
-    <p>I'm Currently Reading:</p>
-    <ul class='goodreads-rss'>
-      <script src="https://rss.bloople.net/?url=https%3A%2F%2Fwww.goodreads.com%2Freview%2Flist_rss%2F89331436%3Fkey%3DVkONwJ_jd4RZw2JtFoEYxAhXuZE732MVl1ZlmqdVyPHeifCG%26shelf%3Dcurrently-reading&detail=-1&showtitle=true&type=js"></script>
-    </ul>
-    <ul class='other'>
-      <!-- <li><a href='#interests'>Interests</a></li> -->
-      <!-- <li><a href='#freelance'>Things I've Built</a></li> -->
-      <li><a target="_blank" href='//www.goodreads.com/review/list/89331436?shelf=read'>Past Reads&nearr;</a></li>
-      <li><a href='#contact'>Contact</a></li>
-    </ul>
-    <div id='contact' class='hide'>
-      <ul>
-        <li><a target="_blank" href='//twitter.com/notyouravgcoder'>Twitter</a></li>
-        <li><a target="_blank" href='//instagram.com/notyouravgcoder'>Instagram</a></li>
-        <li><a target="_blank" href='//linkedin.com/in/notyouravgcoder'>LinkedIn</a></li>
-        <li><a target="_blank" href='mailto:scottdchris@gmail.com'>E-Mail</a></li>
-      </ul>
-    </div>
-    <div id='interests' class='hide other-list'>
-      <ul>
-        <li>Entrepreneurship</li>
-        <li>Psychology (Behavioral, Evolutionary)
-        <li>Audiobooks</li>
-        <li>Personal Finance</li>
-        <li>Hip-Hop &amp;amp; R&amp;B, and <a href="https://open.spotify.com/playlist/3G3QSJTjKb6JrXPtlOM2hu?si=38oADLqmT9CNjThm6n0aiQ" target="_blank">samples</a>!</li>
-        <li>Fitness</li>
-        <li>Cars (F1, Exotic)</li>
-        <li>Software (Python, Pyramid, MySQL, SQLAlchemy, Pytest, Unix, Git, Splunk, TeamCity, NewRelic, Jinja2, Docker, SiteSpect, Photoshop, JIRA, Microservice architecture, Agile methodologies)</li>
-      </ul>
-    </div>
-    <div id='freelance' class='hide other-list'>
-        <ul>
-          <!-- <li><a target="_blank" href='http://section60deal.com/'>Section 60</a>: Retirement Planning Tool</li> -->
-          <li><a target="_blank" href='http://anumhussain.com/'>Anum Hussain</a>: Personal Website</li>
-          <li><a target="_blank" href='http://robreinold.com/'>Robert Reinold</a>: Personal Website</li>
-          <!-- <li><a target="_blank" href='http://getunight.com/'>unight</a>: Social App -->
-        </ul>
+<body>
+  <main>
+    <header>
+      <img class="avatar" src="assets/img/cp5627.png" alt="CryptoPunk #5627">
+      <div class="id">
+        <h1>Chris Scott</h1>
+        <div class="handle">@notyouravgcoder</div>
       </div>
-  </div>
-
-  <!-- Google Analytics -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-81709823-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
-</body>
+      <!-- <a class="contact-btn" href="/cdn-cgi/l/email-protection#6417070b101000070c160d17240309050d084a070b09">Get in touch</a> -->
+    </header>
+    <p class="bio">Growth Engineering at Polymarket <br> Prev. Founder of GMI Capital, Growth Engineering at SurveyMonkey</p>
+    <section class="section">
+      <div class="section-label">WRITING &amp; PRESS</div>
+      <a class="item" href="https://blockworks.co/news/jakpot-games-pay-to-play-arcade" target="_blank" rel="noopener">
+        <span class="year">2025</span><span class="title">Solana-based Jakpot Games launches pay-to-play arcade</span><span class="kind">Press</span>
+      </a>
+      <a class="item" href="https://notyouravgcoder.substack.com/p/forget-the-401k-use-your-money-to" target="_blank" rel="noopener">
+        <span class="year">2025</span><span class="title">Forget the 401(k): Use Your Money to Move Faster</span><span class="kind">Blog</span>
+      </a>
+      <a class="item" href="https://www.buzzsprout.com/1859738/9618941" target="_blank" rel="noopener">
+        <span class="year">2021</span><span class="title">NFT Heat #15: Founder of GMI Capital Crypto Fund</span><span class="kind">Podcast</span>
+      </a>
+      <a class="item" href="https://medium.com/curiosity-by-design/how-a-b-experiments-drive-growth-at-surveymonkey-bea83b3138c0" target="_blank" rel="noopener">
+        <span class="year">2020</span><span class="title">How A/B Experiments Drive Growth at SurveyMonkey</span><span class="kind">Blog</span>
+      </a>
+      <a class="item" href="https://gettingaround.teachable.com/" target="_blank" rel="noopener">
+        <span class="year">2019</span><span class="title">Getting Around: The Car Sharing Blueprint</span><span class="kind">Course</span>
+      </a>
+      <a class="item" href="https://www.linkedin.com/pulse/5-ways-drive-success-being-social-christopher-scott" target="_blank" rel="noopener">
+        <span class="year">2017</span><span class="title">5 Ways to Drive Success by Being Social</span><span class="kind">Blog</span>
+      </a>
+    </section>
+    <footer>
+      <a href="https://twitter.com/notyouravgcoder" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://linkedin.com/in/notyouravgcoder" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/scottdchris" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.goodreads.com/review/list/89331436?shelf=read" target="_blank" rel="noopener">Goodreads</a>
+    </footer>
+  </main>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
